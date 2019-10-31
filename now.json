@@ -3,10 +3,10 @@
   "alias": "react-ssr-now-test.now.sh",
 
   "builds": [
-    { "src": "/index.js", "use": "@now/node-server" }
+    { "src": "index.js", "use": "@now/node" }
   ],
 
   "routes": [
-    { "src": "(.*)", "dest": "/index.js" }
+    { "src": "/(.*)", "dest": "index.js" }
   ]
 }
